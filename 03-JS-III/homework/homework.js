@@ -4,35 +4,95 @@
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-function imprimirSumaNumeros() {
-    // Imprime la suma de los números del 1 al 10
-    // Pista: usa un acumulador
-    // Tu código:
-}
+const { suma } = require("../../02-JS-II/homework/homework");
 
-function encuentraPares(array){
-  // Devuelve un arreglo con los pares encontrados
-  // en el arreglo de enteros pasado como parámetro
-  // Tu código:
+
+
+
+function imprimirSumaNumeros()
+ {
+  var numeros= [1,2,3,4,5,6,7,8,9,10]
+    var suma = 0;
+    for(var i=0;i<10;i++)
+    {
+   suma +=numeros[i]
+    }
+    return suma
+  }
+console.log(imprimirSumaNumeros())
+
+
+
+
+function encuentraPares(array)
+{
+var incrementa = []
+  for(i = 0; i < array.length; i++)
+  {
+    if(array[i]%2===0)
+    {
+    incrementa.push(array[i])
+    }
+  }
+  return incrementa
 }
+console.log(encuentraPares([2,3,4,5,6,7]))
+
+
+
+
+
+
+
+ 
 
 function elevaAlCuadrado(array){
-  // Devuelve un arreglo con cada número del array
-  // elevado al cuadrado
-  // Tu código:
-}
+ 
+  {
+    var incrementa = []
+      for(i = 0; i < array.length; i++)
+      {
+      
+        {
+        incrementa.push(array[i]**2)
+        }
+      }
+      return incrementa
+    }
+  }
+    console.log(elevaAlCuadrado([1, 5, 2,4,6,22, 519]))
 
-function sumaArray(array){
-  // Devuelve el resultado de sumar todos los elementos
-  // de un arreglo de enteros dado
-  // Tu código:
-}
+
+function sumaArray(array)
+{
+  {
+    var numeros= [1,2,4,5,7,8,]
+      var suma = 0;
+      for(var i=0;i<numeros.length;i++)
+      {
+     suma +=numeros[i]
+      }
+      return suma
+    }
+  }
+  console.log(sumaArray([1,2,4,5,7,8,]))
+
 
 function numeroDigitos(num){
-  // Devuelve el número de dígitos de un número dado
-  // Tu código:
-}
-  
+   {
+    
+    var suma = [0]
+        for(i = 1; i <num.length; i++)
+        {
+      
+          suma +=num[i].length
+          
+        
+        }
+        return suma.length
+      }
+    }
+      console.log(numeroDigitos("r2323"))
   
   // No modificar nada debajo de esta línea
   // --------------------------------

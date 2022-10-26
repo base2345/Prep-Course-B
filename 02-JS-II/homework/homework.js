@@ -5,59 +5,136 @@
 // No cambies los nombres de las funciones.
 
 function devolverString(str) {
-    // "Return" la string provista: str
-    // Tu código:
-  }
+  var palabra = str;
+  return palabra
+}
   
-  function suma(x, y) {
+  
+  function suma(x, y)
+   {
+    var x = 5
+    var y = 4
     // "x" e "y" son números
     // Suma "x" e "y" juntos y devuelve el valor
     // Tu código:
-  }
+    result = x+y
+    return result
+  }//
   
-  function resta(x, y) {
-    // Resta "y" de "x" y devuelve el valor
-    // Tu código:
-  }
+  function resta(x, y) 
+  {
+    var y = 4
+    var x = 4
+    result = x-y
+    return result
+  }//console.log(resta())
+
+   
   
-  function multiplica(x, y) {
-    // Multiplica "x" por "y" y devuelve el valor
-    // Tu código:
-  }
+  
+  function multiplica(x, y)
+   {
+      var y = 4
+      var x = 4
+      result = x*y
+      return result
+    }
+    //console.log(multiplica())
+  
   
   function divide(x, y) {
-    // Divide "x" entre "y" y devuelve el valor
-    // Tu código:
+    
+      var y = 10  
+      var x = 50
+      result = x/y
+      return result
   }
+    //console.log(divide())
+  
+  
+  
+  function sonIguales(x, y) 
+  {
+    if(x === y)
+    {
+      return "son iguales"
+    }return false
+  }//console.log(sonIguales(2,2))
   
   function sonIguales(x, y) {
     // Devuelve "true" si "x" e "y" son iguales
     // De lo contrario, devuelve "false"
     // Tu código:
+    
+    
+        if(x===y & y===x)
+        {
+            return true;
+        }
+        else if(x!=y)
+        {
+            return false;
+        }
+    }
+     // console.log(sonIguales(5,4));
+
+      function tienenMismaLongitud(str1, str2) 
+{
+  if (str1.length === str2.length)
+    {
+      return true;
+    }
+    else if(str1.length != str2.length)
+    {
+      return false;
+    }
+
   }
+ // console.log(tienenMismaLongitud("papel","papeles"));
+
   
-  function tienenMismaLongitud(str1, str2) {
-    // Devuelve "true" si las dos strings tienen la misma longitud
-    // De lo contrario, devuelve "false"
-    // Tu código:
-  }
+  function menosQueNoventa(num) 
+     
+    {
+      if (num<=90)
+      {
+        return true;
+      }
+      else if(num>90)
+          {
+            return false;
+          }
+      
+    }
+   // console.log(menosQueNoventa(40));
   
-  function menosQueNoventa(num) {
-    // Devuelve "true" si el argumento de la función "num" es menor que noventa
-    // De lo contrario, devuelve "false"
-    // Tu código:
-  }
   
-  function mayorQueCincuenta(num) {
-    // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
-    // De lo contrario, devuelve "false"
-    // Tu código:
-  }
+  function mayorQueCincuenta(num)
+   {
+    {
+       if (num>=50)
+      {
+        return true
+      }
+        else if(num<50)
+              {
+                return false
+              } 
+      
+                }
+              }
+               // console.log(mayorQueCincuenta(400))
   
-  function obtenerResto(x, y) {
-    // Obten el resto de la división de "x" entre "y"
-    // Tu código:
-  }
+  
+  
+    function obtenerResto(x, y)
+    {
+      
+      let modulo = x / y;
+      console.log(module);
+    }
+   // console.log(obtenerResto(9,2));
+  
   
   function esPar(num) {
     // Devuelve "true" si "num" es par
@@ -108,7 +185,7 @@ function devolverString(str) {
     //Si el número es positivo, devolver ---> "Es positivo"
     //Si el número es negativo, devolver ---> "Es negativo"
     //Si el número es 0, devuelve false
-    // Tu código:
+    // Tu código: 
   }
   
   function agregarSimboloExclamacion(str) {
